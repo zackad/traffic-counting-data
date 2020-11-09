@@ -1,52 +1,30 @@
+CounterApp = React App - Mozilla Firefox
+; Function Key
+; Decrease speed
+F1::
+if WinExist("ahk_exe mpc-hc64.exe")
+    WinActivate, ahk_exe mpc-hc64.exe
+    Send ^{Down}
+    WinActivate, %CounterApp%
+return
+
+; Reset speed
+F2::
+if WinExist("ahk_exe mpc-hc64.exe")
+    WinActivate, ahk_exe mpc-hc64.exe
+    Send ^r
+    WinActivate, %CounterApp%
+return
+
+; Increase Speed
+F3::
+if WinExist("ahk_exe mpc-hc64.exe")
+    WinActivate, ahk_exe mpc-hc64.exe
+    Send ^{Up}
+    WinActivate, %CounterApp%
+return
+
 ;Play/Pause
 NumpadEnter::
 Send {Media_Play_Pause}
-return
-
-^Numpad1::
-Send,7
-return
-
-^Numpad2::
-Send,8
-return
-
-^Numpad3::
-Send,9
-return
-
-^Numpad4::
-Send,a
-return
-
-^Numpad5::
-Send,b
-return
-
-^Numpad6::
-Send,c
-return
-
-!Numpad1::
-Send,d
-return
-
-!Numpad2::
-Send,e
-return
-
-!Numpad3::
-Send,f
-return
-
-!Numpad4::
-Send,g
-return
-
-!Numpad5::
-Send,h
-return
-
-!Numpad6::
-Send,i
 return
