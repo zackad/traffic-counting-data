@@ -1,4 +1,4 @@
-CounterApp = React App - Mozilla Firefox
+CounterApp = Traffic Count Reader
 ; Function Key
 ; Decrease speed
 F1::
